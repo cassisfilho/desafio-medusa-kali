@@ -47,7 +47,7 @@ O serviço de FTP (`vsftpd 2.3.4`) foi testado para verificar a robustez das cre
 ```medusa -h 192.168.56.101 -u msfadmin -P minhalista.txt -M ftp -t 4```
 
 * **Evidência:**
-![Força Bruta FTP](dio1.png)
+![Força Bruta FTP](https://raw.githubusercontent.com/cassisfilho/desafio-medusa-kali/main/dio1.png)
 
 ### Resultado:
 O Medusa testou as combinações da wordlist e identificou com sucesso a credencial válida para o usuário `msfadmin`.
@@ -60,7 +60,7 @@ O **DVWA (Damn Vulnerable Web Application)** foi configurado com o nível de seg
 1. **Análise do Formulário:** Identificou-se a página de login (`/vulnerabilities/brute/`).
 2. **Abordagem:** Utilização de ferramentas de automação/wordlists para submissão massiva de requisições POST testando combinações de usuário e senha.
 * **Evidência:**
-![Formulário Web DVWA](dio2.png)
+![Formulário Web DVWA](https://raw.githubusercontent.com/cassisfilho/desafio-medusa-kali/main/dio2.png)
 ---
 
 ## 5. Cenário 3: Password Spraying / Força Bruta em SMB
@@ -69,7 +69,7 @@ O serviço SMB (`port 445`) do Metasploitable foi alvo de uma tentativa de enume
 ### Descrição da Execução:
 Utilização de lista de usuários (*Password Spraying*) testando uma senha comum contra múltiplos usuários no serviço SMB.
 * **Evidência:**
-![SMB Medusa](dio3.png)
+![SMB Medusa](https://raw.githubusercontent.com/cassisfilho/desafio-medusa-kali/main/dio3.png)
 ---
 
 ## 6. Medidas de Prevenção e Mitigação
