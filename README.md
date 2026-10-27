@@ -47,7 +47,7 @@ O serviço de FTP (`vsftpd 2.3.4`) foi testado para verificar a robustez das cre
 ```medusa -h 192.168.56.101 -u msfadmin -P minhalista.txt -M ftp -t 4```
 
 * **Evidência:**
-![Força Bruta FTP](https://raw.githubusercontent.com/cassisfilho/desafio-medusa-kali/main/dio1.png)
+![Força Bruta FTP]([https://raw.githubusercontent.com/cassisfilho/desafio-medusa-kali/main/dio1.png](https://github.com/cassisfilho/desafio-medusa-kali/blob/main/images/dio1.png))
 
 ### Resultado:
 O Medusa testou as combinações da wordlist e identificou com sucesso a credencial válida para o usuário `msfadmin`.
