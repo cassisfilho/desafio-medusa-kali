@@ -6,7 +6,7 @@
 
 ---
 
-## 📋 Sumário
+## Sumário
 1. [Introdução](#1-introdução)
 2. [Configuração do Ambiente de Laboratório](#2-configuração-do-ambiente-de-laboratório)
 3. [Cenário 1: Força Bruta em FTP (Medusa)](#3-cenário-1-força-bruta-em-ftp-medusa)
