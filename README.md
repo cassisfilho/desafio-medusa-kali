@@ -42,9 +42,12 @@ O serviço de FTP (`vsftpd 2.3.4`) foi testado para verificar a robustez das cre
 ### Descrição da Execução:
 * Alvo: 192.168.56.101
 * Usuário alvo: msfadmin
-* Ferramenta: Medusa com módulo FTP e wordlist rockyou.txt.
+* Ferramenta: Medusa com módulo FTP e wordlist minhalista.txt.
 
-```medusa -h 192.168.56.101 -u msfadmin -P /usr/share/wordlists/rockyou.txt -M ftp -t 4```
+```medusa -h 192.168.56.101 -u msfadmin -P minhalista.txt -M ftp -t 4```
+
+* **Evidência:**
+![Força Bruta FTP](dio1.png)
 
 ### Resultado:
 O Medusa testou as combinações da wordlist e identificou com sucesso a credencial válida para o usuário `msfadmin`.
@@ -56,7 +59,8 @@ O **DVWA (Damn Vulnerable Web Application)** foi configurado com o nível de seg
 
 1. **Análise do Formulário:** Identificou-se a página de login (`/vulnerabilities/brute/`).
 2. **Abordagem:** Utilização de ferramentas de automação/wordlists para submissão massiva de requisições POST testando combinações de usuário e senha.
-
+* **Evidência:**
+![Formulário Web DVWA](dio2.png)
 ---
 
 ## 5. Cenário 3: Password Spraying / Força Bruta em SMB
@@ -64,7 +68,8 @@ O serviço SMB (`port 445`) do Metasploitable foi alvo de uma tentativa de enume
 
 ### Descrição da Execução:
 Utilização de lista de usuários (*Password Spraying*) testando uma senha comum contra múltiplos usuários no serviço SMB.
-
+* **Evidência:**
+![SMB Medusa](dio3.png)
 ---
 
 ## 6. Medidas de Prevenção e Mitigação
@@ -79,3 +84,6 @@ Para proteger os ambientes contra os cenários explorados, recomenda-se:
 
 ## 7. Conclusão
 O laboratório permitiu visualizar de forma prática como ataques de força bruta operam e a importância de testes de intrusão controlados para mapear vulnerabilidades antes que agentes mal-intencionados o façam. A documentação e o compartilhamento no GitHub reforçam o aprendizado contínuo em segurança da informação.
+
+---
+*Ambiente de laboratório isolado para fins estritamente educacionais e de auditoria defensiva.*
