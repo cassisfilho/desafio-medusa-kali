@@ -32,7 +32,8 @@ Para isolar o tráfego e garantir a segurança, o ambiente foi estruturado em um
 ### Passo inicial: Reconhecimento com Nmap
 Antes de iniciar os ataques, realizamos um escaneamento de portas para identificar os serviços ativos no alvo utilizando a ferramenta Nmap.
 
-nmap -sV -p- 192.168.56.101
+```nmap -sV -p- 192.168.56.101```
+
 ---
 
 ## 3. Cenário 1: Força Bruta em FTP (Medusa)
@@ -43,7 +44,7 @@ O serviço de FTP (`vsftpd 2.3.4`) foi testado para verificar a robustez das cre
 * Usuário alvo: msfadmin
 * Ferramenta: Medusa com módulo FTP e wordlist rockyou.txt.
 
-medusa -h 192.168.56.101 -u msfadmin -P /usr/share/wordlists/rockyou.txt -M ftp -t 4
+```medusa -h 192.168.56.101 -u msfadmin -P /usr/share/wordlists/rockyou.txt -M ftp -t 4```
 
 ### Resultado:
 O Medusa testou as combinações da wordlist e identificou com sucesso a credencial válida para o usuário `msfadmin`.
