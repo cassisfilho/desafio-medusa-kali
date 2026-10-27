@@ -69,7 +69,7 @@ O serviço SMB (`port 445`) do Metasploitable foi alvo de uma tentativa de enume
 ### Descrição da Execução:
 Utilização de lista de usuários (*Password Spraying*) testando uma senha comum contra múltiplos usuários no serviço SMB.
 * **Evidência:**
-<img src="./images/images/dio3.png" alt="SMB Medusa" width="100%">
+<img src="./images/dio3.png" alt="SMB Medusa" width="100%">
 ---
 
 ## 6. Medidas de Prevenção e Mitigação
